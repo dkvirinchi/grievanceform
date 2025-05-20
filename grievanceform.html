@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Rhea's Grievance Form 💖</title>
+  <style>
+    body {
+      background-color: #ffe6f0;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      color: #cc0066;
+      display: flex;
+      justify-content: center;
+      padding: 40px;
+    }
+    .form-container {
+      background-color: #fff0f5;
+      border: 2px solid #ff66b2;
+      border-radius: 20px;
+      padding: 30px;
+      width: 90%;
+      max-width: 600px;
+      box-shadow: 0 0 15px #ff99cc;
+    }
+    h1 {
+      text-align: center;
+      font-size: 28px;
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    input, textarea, select {
+      width: 100%;
+      padding: 10px;
+      border: 2px solid #ffb6c1;
+      border-radius: 10px;
+      margin-top: 5px;
+    }
+    button {
+      background-color: #ff69b4;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      font-size: 16px;
+      border-radius: 10px;
+      cursor: pointer;
+      margin-top: 20px;
+      width: 100%;
+    }
+    .heart {
+      color: #ff3366;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h1>💗 Rhea's Official Grievance Form 💗</h1>
+    <form action="https://formspree.io/f/mqaqjgoy" method="POST">
+      <label for="date">📅 Date of Incident <span class="heart">❤️</span></label>
+      <input type="date" name="date" required>
+
+      <label for="grievance-type">📌 Type of Grievance <span class="heart">💕</span></label>
+      <select name="grievance-type" required>
+        <option value="">-- Select one --</option>
+        <option value="Ignored my texts">Ignored my texts 💬</option>
+        <option value="Didn’t listen properly">Didn’t listen properly 👂</option>
+        <option value="Stole my food">Stole my fries 🍟</option>
+        <option value="Didn’t say I look cute">Didn’t say I look cute 💁‍♀️</option>
+        <option value="Other">Other 😤</option>
+      </select>
+
+      <label for="description">📝 Detailed Description <span class="heart">💖</span></label>
+      <textarea name="description" rows="5" placeholder="Tell me everything, cutie 💌" required></textarea>
+
+      <label for="severity">📊 Severity Level <span class="heart">💔</span></label>
+      <select name="severity" required>
+        <option value="">-- Choose wisely --</option>
+        <option value="Minor (Just fix it)">Minor 💗</option>
+        <option value="Moderate (I’m a little hurt)">Moderate 💞</option>
+        <option value="Severe (I cannot with anything anymore)">Severe 💔</option>
+      </select>
+
+      <label for="preferred-resolution">🎁 How should he make it up to you? <span class="heart">💝</span></label>
+      <textarea name="resolution" rows="3" placeholder="Chocolate? Hug? Binge-watch your fave show? 👀" required></textarea>
+
+      <button type="submit">Submit My Complaint 💌</button>
+    </form>
+  </div>
+</body>
+</html>
